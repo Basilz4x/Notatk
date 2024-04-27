@@ -18,13 +18,13 @@ class AppColor {
     Color.fromARGB(255, 128, 222, 234),
     Color.fromARGB(255, 244, 143, 177),
     Color.fromARGB(255, 128, 203, 196),
-    Color.fromARGB(255, 255, 102, 102), // Reddish
-    Color.fromARGB(255, 102, 255, 102), // Greenish
-    Color.fromARGB(255, 102, 102, 255), // Blueish
-    Color.fromARGB(255, 255, 102, 255), // Pinkish
-    Color.fromARGB(255, 255, 255, 102), // Yellowish
-    Color.fromARGB(255, 102, 255, 255), // Cyanish
-    Color.fromARGB(255, 255, 204, 255), // Light Pink
+    Color.fromARGB(255, 255, 102, 102),
+    Color.fromARGB(255, 102, 255, 102),
+    Color.fromARGB(255, 102, 102, 255),
+    Color.fromARGB(255, 255, 102, 255),
+    Color.fromARGB(255, 255, 255, 102),
+    Color.fromARGB(255, 102, 255, 255),
+    Color.fromARGB(255, 255, 204, 255),
     Color.fromARGB(255, 204, 255, 255),
   ];
 }

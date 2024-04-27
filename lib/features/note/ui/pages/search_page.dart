@@ -3,7 +3,6 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:note_app/features/note/ui/controllers/search_page_controller.dart';
 import 'package:note_app/features/note/ui/widgets/custom_back_button.dart';
 import 'package:note_app/features/note/ui/widgets/custom_search_bar.dart';
-import 'package:note_app/features/note/ui/widgets/no_search_result_design.dart';
 import 'package:note_app/features/note/ui/widgets/note_list_view.dart';
 import 'package:note_app/features/note/ui/widgets/search_for_notes_button.dart';
 import 'package:note_app/features/note/ui/widgets/search_page_error_design.dart';
@@ -32,8 +31,7 @@ class _SearchPageState extends ConsumerState<SearchPage> {
       backgroundColor: AppColor.backgroundColor,
       body: SafeArea(
         child: Padding(
-          // ignore: prefer_const_constructors
-          padding: EdgeInsets.all(20),
+          padding: const EdgeInsets.all(20),
           child: Column(
             children: [
               Row(
@@ -49,10 +47,6 @@ class _SearchPageState extends ConsumerState<SearchPage> {
               ),
               searchedListAsync.when(
                   data: (data) {
-                    if (data.isEmpty) {
-                      print("yes yes");
-                      return const NoSearchResultDesign();
-                    }
                     return NoteListView(noteList: data);
                   },
                   error: (e, stack) {

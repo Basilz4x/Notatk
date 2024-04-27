@@ -21,8 +21,6 @@ class _EditNoteLayoutState extends ConsumerState<EditNoteLayout> {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController contentController = TextEditingController();
 
-  // final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-
   @override
   void initState() {
     super.initState();
@@ -46,7 +44,6 @@ class _EditNoteLayoutState extends ConsumerState<EditNoteLayout> {
   @override
   Widget build(BuildContext context) {
     return Form(
-      // key: formKey,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:go_router/go_router.dart';
 import 'package:note_app/utils/constant/app_constant.dart';
 import 'package:note_app/utils/constant/color_constant.dart';
 import 'package:note_app/features/note/domain/note.dart';
@@ -31,6 +32,7 @@ class _AddNotePageState extends ConsumerState<AddNotePage> {
             dateCreated: DateTime.now(),
             dateModified: DateTime.now(),
           ));
+      context.pop();
     }
   }
 
