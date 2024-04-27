@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:note_app/features/note/ui/pages/note_page.dart';
 import 'package:note_app/utils/constant/color_constant.dart';
 import 'package:note_app/features/note/domain/note.dart';
 import 'package:note_app/features/note/ui/controllers/home_page_controller.dart';
@@ -56,6 +57,9 @@ class _EditNoteLayoutState extends ConsumerState<EditNoteLayout> {
                     title: titleController.text,
                     content: contentController.text,
                     id: widget.note.id);
+                ref
+                    .read(editIsClickedProvider.notifier)
+                    .update((state) => false);
               }),
             ],
           ),
